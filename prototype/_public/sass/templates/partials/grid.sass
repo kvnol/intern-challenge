@@ -1,0 +1,11 @@
+.row
+	clear: both
+
+$boolean: $col-slug !default
+
+@for $i from 12 through 1
+	.#{$col-slug}-#{$i}
+		width: calc((#{$width} * #{$i}) + ((#{$i} - 1) * #{$margin}))
+		margin-right: $margin
+		&:last-child
+			margin-right: 0
