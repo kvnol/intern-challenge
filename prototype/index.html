@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Nova Conta Bancária | ContaAzul</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <header class="ca--header" role="banner">
+    <div class="ca--container">
+      <div class="ca--logo row col-12">
+        <img src="../images/logo-ca.png" alt="Conta Azul Logo" role="img">
+      </div>
+    </div>
+  </header> <!-- /ca-header -->
+
+  <main class="ca--main" role="main">
+    <nav class="ca--breadcrumb row col-12" role="navigation">
+      <div class="ca--container">
+        <ol class="ca--breadcrumb_list" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li class="ca--breadcrumb_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" class="ca--breadcrumb-link"><span class="ca--breadcrumb_name">Início</span></a></li>
+          <li class="ca--breadcrumb_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" class="ca--breadcrumb-link"><span class="ca--breadcrumb_name">Conta Bancária</span></a></li>
+          <li class="ca--breadcrumb_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span class="ca--breadcrumb_name">Nova</span></li>
+        </ol>
+      </div>
+    </nav> <!-- /ca-breadcrumb -->
+
+    <section class="ca--application" role="section">
+      <div class="ca--container col-12">
+        <form action="" class="ca--application_form" role="form">
+          <div class="ca--container col-12">
+            <header class="ca--application_header row col-12">
+              <h1 class="ca--application_title">Conta Bancária</h1>
+            </header>
+
+            <div class="ca--form_line row">
+              <div class="ca--form_bank col-4">
+                <label for="form_bank-name">Nome do Banco</label>
+                <input type="text" id="form_bank-name" placeholder="Digite aqui o nome do banco">
+              </div>
+
+              <div class="ca--form_account-type col-4">
+                <input type="radio" id="form_account-type--pf" name="account-type" value="Pessoa física">
+                <label for="form_account-type--pf">Tipo de conta</label>
+                <input type="radio" id="form_account-type--pj" name="account-type" value="Pessoa jurídica">
+                <label for="form_account-type--pj">Tipo de conta</label>
+              </div>
+            </div>
+
+            <div class="ca--form_line row">
+              <p class="ca--form_p row col-8">Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</p>
+
+              <div class="ca--form_balance col-4">
+                <label for="form_initial-balance">Saldo</label>
+                <input type="number" id="form_initial-balance" placeholder="Informe aqui o valor do saldo inicial">
+              </div>
+
+              <div class="ca--form_date col-4">
+                <label for="form_initial-date">Data</label>
+                <input type="date" id="form_initial-date" placeholder="Informe aqui a data do saldo inicial">
+              </div>
+            </div>
+          </div>
+
+          <div class="ca--form_btns col-12">
+            <div class="ca--form_btn-cancel col-2">
+              <button class="ca--form_btn-default" role="button">Cancelar</button>
+            </div>
+
+            <div class="ca--form_btn-save col-6">
+              <button class="ca--form_btn-default" role="button">Salvar esta conta e adicionar outra</button>
+              <button class="ca--form_btn-action" role="button">Salvar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main> <!-- /ca-main -->
+
+  <footer class="ca--footer" role="contentinfo">
+    <div class="container col-12">
+      <div class="ca--footer-logo">
+        <img src="../images/logo-ca-footer.png" alt="Conta Azul Logo" role="img">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
