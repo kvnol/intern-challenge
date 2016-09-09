@@ -1,8 +1,12 @@
 .ca--form_btn
-  width: $width + $height
-  height: $height
+  min-width: $ca--grid-width * 2 + $ca--grid-height
+  height: $ca--grid-height * 2
+  font:
+    family: $ca--font-family
+    size: $ca--font-size
+  @include border-radius(5px)
 
-  & default
+  &.default
+    border: 2px solid $ca--border-color
     color: $ca--text-color
     background: $ca--bg-container-color
-

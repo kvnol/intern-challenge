@@ -1,11 +1,9 @@
 .row
-	clear: both
-
-$boolean: $col-slug !default
+  clear: both
 
 @for $i from 12 through 1
-	.#{$col-slug}-#{$i}
-		width: $width * $i + ($i - 1) * $margin
-		margin-right: $margin
-		&:last-child
-			margin-right: 0
+  .#{$ca--col-slug}-#{$i}
+    width: $ca--grid-width * $i + ($i - 1) * $ca--grid-margin
+    margin-right: $ca--grid-margin
+    &:last-child
+      margin-right: 0
