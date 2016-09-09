@@ -9,16 +9,16 @@
 </head>
 <body>
   <header class="ca--header" role="banner">
-    <div class="ca--container">
-      <div class="ca--logo row col-12">
+    <div class="ca--container col-12">
+      <div class="ca--logo row">
         <img src="../images/logo-ca.png" alt="Conta Azul Logo" role="img">
       </div>
     </div>
   </header> <!-- /ca-header -->
 
   <main class="ca--main" role="main">
-    <nav class="ca--breadcrumb row col-12" role="navigation">
-      <div class="ca--container">
+    <nav class="ca--breadcrumb row" role="navigation">
+      <div class="ca--container col-12">
         <ol class="ca--breadcrumb_list" itemscope itemtype="http://schema.org/BreadcrumbList">
           <li class="ca--breadcrumb_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" class="ca--breadcrumb-link"><span class="ca--breadcrumb_name">Início</span></a></li>
           <li class="ca--breadcrumb_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" class="ca--breadcrumb-link"><span class="ca--breadcrumb_name">Conta Bancária</span></a></li>
@@ -27,15 +27,17 @@
       </div>
     </nav> <!-- /ca-breadcrumb -->
 
+    <div class="clear"></div>
+
     <section class="ca--application" role="section">
       <div class="ca--container col-12">
         <form action="" class="ca--application_form" role="form">
           <div class="ca--container col-12">
-            <header class="ca--application_header row col-12">
+            <header class="ca--form_line row col-10">
               <h1 class="ca--application_title">Conta Bancária</h1>
             </header>
 
-            <div class="ca--form_line row">
+            <div class="ca--form_line row col-10">
               <div class="ca--form_bank col-4">
                 <label for="form_bank-name">Nome do Banco</label>
                 <input type="text" id="form_bank-name" placeholder="Digite aqui o nome do banco">
@@ -49,7 +51,7 @@
               </div>
             </div>
 
-            <div class="ca--form_line row">
+            <div class="ca--form_line row col-10">
               <p class="ca--form_p row col-8">Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</p>
 
               <div class="ca--form_balance col-4">
@@ -64,14 +66,14 @@
             </div>
           </div>
 
-          <div class="ca--form_btns col-12">
+          <div class="ca--form_btn-final col-12">
             <div class="ca--form_btn-cancel col-2">
-              <button class="ca--form_btn default" role="button">Cancelar</button>
+              <button class="ca--form_btn default col-2" role="button">Cancelar</button>
             </div>
 
-            <div class="ca--form_btn-save col-6">
-              <button class="ca--form_btn default" role="button">Salvar esta conta e adicionar outra</button>
-              <button class="ca--form_btn action" role="button">Salvar</button>
+            <div class="ca--form_btn-complete col-6">
+              <button class="ca--form_btn default col-4" role="button">Salvar esta conta e adicionar outra</button>
+              <button class="ca--form_btn action col-2" role="button">Salvar</button>
             </div>
           </div>
         </form>
@@ -79,9 +81,11 @@
     </section>
   </main> <!-- /ca-main -->
 
+  <div class="clear"></div>
+
   <footer class="ca--footer" role="contentinfo">
-    <div class="container col-12">
-      <div class="ca--footer-logo">
+    <div class="ca--container col-12">
+      <div class="ca--footer_logo">
         <img src="../images/logo-ca-footer.png" alt="Conta Azul Logo" role="img">
       </div>
     </div>

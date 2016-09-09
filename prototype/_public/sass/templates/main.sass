@@ -1,0 +1,26 @@
+.ca--breadcrumb
+  margin: $ca--grid-margin 0
+
+  .ca--breadcrumb_item
+    display: inline-block
+    
+    &:after
+      content: '\203A'
+      display: inline-block
+      margin: 0 ($ca--grid-margin / 2)
+
+    &:last-child:after
+      content: none
+
+.ca--application_title
+  border-bottom: 2px dotted $ca--border-color
+  padding-bottom: $ca--grid-margin * 2.5
+  font-size: $ca--heading-size
+
+.ca--application_form .ca--container
+  margin: 0 auto
+  padding: ($ca--grid-margin * 3.5) 0
+  background: $ca--bg-container-color
+
+.ca--form_line
+  margin: 0 auto ($ca--grid-margin * 1.5)

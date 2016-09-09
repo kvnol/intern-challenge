@@ -1,12 +1,38 @@
+.ca--form_btn-final
+  overflow: hidden
+  margin: ($ca--grid-margin * 2.5) 0
+
+.ca--form_btn-cancel
+  float: left
+
+.ca--form_btn-complete
+  float: right
+  margin-right: 0
+
+  button 
+    float: left
+
+    &:last-child
+      margin-right: 0
+
 .ca--form_btn
   min-width: $ca--grid-width * 2 + $ca--grid-height
   height: $ca--grid-height * 2
   font:
     family: $ca--font-family
     size: $ca--font-size
+  cursor: pointer
   @include border-radius(5px)
+
+  &:hover
+    opacity: .75
 
   &.default
     border: 2px solid $ca--border-color
     color: $ca--text-color
     background: $ca--bg-container-color
+
+  &.action
+    border: 0
+    color: $ca--bg-container-color
+    background: $ca--button-color_action
