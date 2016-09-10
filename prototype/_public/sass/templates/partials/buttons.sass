@@ -5,30 +5,46 @@
 .ca--form_btn-cancel
   float: left
 
+  @media (max-width: $ca--tablet_width)
+    float: none
+    width: 100%
+
 .ca--form_btn-complete
   float: right
   margin-right: 0
+  @media (max-width: $ca--tablet_width)
+    float: none
+    width: 100%
+    &:last-child
+      margin-bottom: 0
 
   button 
     float: left
+    @media (max-width: $ca--tablet_width)
+      float: none
 
     &:last-child
       margin-right: 0
 
 .ca--form_btn
-  min-width: $ca--grid-width * 2 + $ca--grid-height
+  min-width: ($ca--grid-width * 2) + $ca--grid-height
   height: $ca--grid-height * 2
   font:
     family: $ca--font-family
     size: $ca--font-size
   cursor: pointer
   @include border-radius(5px)
+  @media (max-width: $ca--tablet_width)
+    width: 100%
+    margin-bottom: $ca--grid-margin
 
-  &:hover
+  &:hover,
+  &:focus,
+  &:active
     opacity: .75
 
   &.default
-    border: 2px solid $ca--border-color
+    border: $ca--border-solid
     color: $ca--text-color
     background: $ca--bg-container-color
 

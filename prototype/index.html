@@ -32,41 +32,46 @@
     <section class="ca--application" role="section">
       <div class="ca--container col-12">
         <form action="" class="ca--application_form" role="form">
-          <div class="ca--container col-12">
+          <div class="ca--container">
             <header class="ca--form_line row col-10">
               <h1 class="ca--application_title">Conta Bancária</h1>
             </header>
 
-            <div class="ca--form_line row col-10">
-              <div class="ca--form_bank col-4">
-                <label for="form_bank-name">Nome do Banco</label>
-                <input type="text" id="form_bank-name" placeholder="Digite aqui o nome do banco">
+            <div class="ca--form_line ca--form-info row col-10">
+              <div class="ca--form_line--container ca--form_bank col-4">
+                <label class="ca--form_label" for="form_bank-name">Nome do Banco</label>
+                <input class="ca--form_input" type="text" id="form_bank-name" placeholder="Digite aqui o nome do banco">
               </div>
 
-              <div class="ca--form_account-type col-4">
-                <input type="radio" id="form_account-type--pf" name="account-type" value="Pessoa física">
-                <label for="form_account-type--pf">Tipo de conta</label>
-                <input type="radio" id="form_account-type--pj" name="account-type" value="Pessoa jurídica">
-                <label for="form_account-type--pj">Tipo de conta</label>
+              <div class="ca--form_line--container ca--form_account-type col-4">
+                <label class="ca--form_label" for="form_account-type">Tipo de conta</label>
+                <div class="col-2">
+                  <input type="radio" id="form_account-type--pf" name="account-type" value="Pessoa física">
+                  <label for="form_account-type--pf">Pessoa física</label>
+                </div>
+                <div class="col-2">
+                  <input type="radio" id="form_account-type--pj" name="account-type" value="Pessoa jurídica">
+                  <label for="form_account-type--pj">Pessoa jurídica</label>
+                </div>
               </div>
             </div>
 
-            <div class="ca--form_line row col-10">
-              <p class="ca--form_p row col-8">Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</p>
+            <div class="ca--form_line ca--form-info-balance row col-10">
+              <p class="ca--form_p">Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</p>
 
-              <div class="ca--form_balance col-4">
-                <label for="form_initial-balance">Saldo</label>
-                <input type="number" id="form_initial-balance" placeholder="Informe aqui o valor do saldo inicial">
+              <div class="ca--form_line--container ca--form_balance col-4">
+                <label class="ca--form_label" for="form_initial-balance">Saldo</label>
+                <input type="text" class="ca--form_input" id="form_initial-balance" placeholder="Informe aqui o valor do saldo inicial">
               </div>
 
-              <div class="ca--form_date col-4">
-                <label for="form_initial-date">Data</label>
-                <input type="date" id="form_initial-date" placeholder="Informe aqui a data do saldo inicial">
+              <div class="ca--form_line--container ca--form_date col-4">
+                <label class="ca--form_label" for="form_initial-date">Data</label>
+                <input type="text" pattern="\d{1,2}/\d{1,2}/\d{4}" class="ca--form_input" id="form_initial-date" name="name" placeholder="Informe aqui a data do saldo inicial">
               </div>
             </div>
           </div>
 
-          <div class="ca--form_btn-final col-12">
+          <div class="ca--form_btn-final">
             <div class="ca--form_btn-cancel col-2">
               <button class="ca--form_btn default col-2" role="button">Cancelar</button>
             </div>

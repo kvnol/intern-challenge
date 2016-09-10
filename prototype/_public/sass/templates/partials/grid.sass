@@ -5,3 +5,19 @@
   .#{$ca--col-slug}-#{$i}
     width: $ca--grid-width * $i + ($i - 1) * $ca--grid-margin
     margin-right: $ca--grid-margin
+
+.col-12
+  @media (max-width: $ca--desktop_width)
+    width: 95%
+  @media (max-width: $ca--tablet_width)
+    width: 90%
+
+.col-10
+  @media (max-width: $ca--desktop_width)
+    width: 90%
+  @media (max-width: $ca--tablet_width)
+    width: 85%
+
+.col-4
+  @media (max-width: $ca--tablet_width)
+    width: 100%

@@ -1,22 +1,27 @@
 // config
 
 .clear
-	@extend %clearfix
+  @extend %clearfix
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
 
 body
-	font: 
-		family: $ca--font-family
-		weight: $ca--font-weight
-		size: $ca--font-size
-	color: $ca--text-color
-	line-height: $ca--line-height
-	background: $ca--bg-color
+  font: 
+    family: $ca--font-family
+    weight: $ca--font-weight
+    size: $ca--font-size
+  color: $ca--text-color
+  line-height: $ca--line-height
+  background: $ca--bg-color
 
 .ca--container
-	margin: 0 auto
+  margin: 0 auto
 
 a
-	color: $ca--brand-color
+  color: $ca--brand-color
 
 // headings
 
@@ -26,7 +31,7 @@ h3,
 h4,
 h5,
 h6
-	font:
-		family: 'Proxima Nova Condensed'
-		weight: 300
-	text-transform: uppercase
+  font:
+    family: 'Proxima Nova Condensed'
+    weight: 300
+  text-transform: uppercase

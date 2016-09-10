@@ -13,14 +13,43 @@
       content: none
 
 .ca--application_title
-  border-bottom: 2px dotted $ca--border-color
+  border-bottom: $ca--border-solid
   padding-bottom: $ca--grid-margin * 2.5
   font-size: $ca--heading-size
+  line-height: $ca--grid-height * 1.5
 
 .ca--application_form .ca--container
+  border: $ca--border-solid
   margin: 0 auto
   padding: ($ca--grid-margin * 3.5) 0
   background: $ca--bg-container-color
+  @media (max-width: $ca--tablet_width)
+    padding: ($ca--grid-margin * 3.5) 0 $ca--grid-margin 
 
 .ca--form_line
+  overflow: hidden
+  clear: both
   margin: 0 auto ($ca--grid-margin * 1.5)
+  
+  &--container
+    float: left
+    @media (max-width: $ca--tablet_width)
+      float: none
+      margin-bottom: $ca--grid-margin * 1.5
+      &:last-child
+        margin-bottom: 0
+  
+.ca--form_account-type
+  label
+    vertical-align: text-top
+
+  .col-2
+    display: inline-block
+    margin-right: 0
+
+.ca--form-info-balance
+  border-top: $ca--border-dotted
+  padding-top: $ca--grid-margin * 1.5
+  
+  .ca--form_p
+    margin-bottom: $ca--grid-margin * 1.5
